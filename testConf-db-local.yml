@@ -33,3 +33,6 @@ spring:
 ribbon:
   eureka:
     enabled: false
+
+
+message: Hello
