@@ -1,0 +1,3 @@
+constants:
+  logging:
+    uri:  http://localhost:9090/logging/log
