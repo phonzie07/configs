@@ -1,0 +1,25 @@
+hibernate:
+  hbm2ddl:
+    auto: update
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    show-sql: false
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        type: false
+        jdbc:
+          lob:
+            non_contextual_creation: true

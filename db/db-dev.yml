@@ -1,12 +1,6 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: info, health, mappings, shutdown, env, refresh
-
 hibernate:
   hbm2ddl:
-    auto: update
+    auto: validate
 
 spring:
   datasource:
@@ -15,7 +9,7 @@ spring:
   # JPA
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
       naming:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
     show-sql: false
@@ -29,7 +23,3 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-
-ribbon:
-  eureka:
-    enabled: false
