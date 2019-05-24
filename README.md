@@ -1,1 +1,1 @@
-# configurations/properties for TrueMoney Microservices Framework.
+# configurations/properties for Generic Framework.
