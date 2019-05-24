@@ -6,4 +6,4 @@ eureka:
       defaultZone: http://localhost:8888/eureka
     instance:
       hostname: localhost
-#    preferIpAddress: true
+      lease-expiration-duration-in-seconds: 10
