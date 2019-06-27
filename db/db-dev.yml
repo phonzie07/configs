@@ -1,6 +1,6 @@
 hibernate:
   hbm2ddl:
-    auto: validate
+    auto: update
 
 spring:
   datasource:
@@ -9,16 +9,17 @@ spring:
   # JPA
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
       naming:
-        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        #        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        implicit-strategy: ocom.generic.core.base.CamelCaseNamingStrategyImpl
     show-sql: false
     open-in-view: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     properties:
       hibernate:
-        show_sql: false
-        format_sql: false
+        show_sql: true
+        format_sql: true
         type: false
         jdbc:
           lob:
