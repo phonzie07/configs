@@ -11,8 +11,8 @@ spring:
     hibernate:
       ddl-auto: update
       naming:
-#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
 #        implicit-strategy: com.generic.core.base.CamelCaseNamingStrategyImpl
     show-sql: false
     open-in-view: false
