@@ -10,9 +10,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-      naming:
+#      naming:
         #        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
-        implicit-strategy: com.generic.core.base.CamelCaseNamingStrategyImpl
+#        implicit-strategy: com.generic.core.base.CamelCaseNamingStrategyImpl
     show-sql: false
     open-in-view: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
